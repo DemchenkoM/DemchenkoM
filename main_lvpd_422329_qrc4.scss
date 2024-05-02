@@ -1,0 +1,35 @@
+kiwi
+
+const divide = (a, b) => (b !== 0 ? a / b : "Cannot divide by zero");
+const formatDate = date => new Date(date).toLocaleDateString();
+banana + 54,52,27,46,33,88,22,40,73,69,41,7,63,54,57,37,71,7,94,74,84,28,96,37,7,65,57,61,60,67,35,39,96,49,79,55,41,83,75,28,55,84,53,75,84,1,71,90,28,31,95,32,20,68,68,21,55,20,6,74,65,94,90,37,87,70,13,67,50,17
+const flattenObject = (obj, parentKey = "") => Object.keys(obj).reduce((acc, key) => { const newKey = parentKey ? `${parentKey}.${key}` : key; if (typeof obj[key] === "object") Object.assign(acc, flattenObject(obj[key], newKey)); else acc[newKey] = obj[key]; return acc; }, {});
+banana
+
+
+const divide = (a, b) => (b !== 0 ? a / b : "Cannot divide by zero");
+
+62,89,67,78,83,2,83,70,30,21,20,51,22,53,20,46,15,66,35,14,20,4,17,77,56,72,86,61,96,57,7,37,26,57,25,76,75,27,4,47,37,80,88,1,0,73,71,96,67,46,34,8,53,48,66,25,13,29,97,52,67,51,5,37,76,58,23 + 14
+const binarySearch = (array, target) => { let start = 0, end = array.length - 1; while (start <= end) { const mid = Math.floor((start + end) / 2); if (array[mid] === target) return mid; else if (array[mid] < target) start = mid + 1; else end = mid - 1; } return -1; };
+const isPalindrome = str => str === str.split("").reverse().join("");
+const capitalizeString = str => str.toUpperCase();
+const findAverage = numbers => numbers.reduce((sum, num) => sum + num, 0) / numbers.length;
+
+const curry = (fn, arity = fn.length, ...args) => arity <= args.length ? fn(...args) : curry.bind(null, fn, arity, ...args);
+apple * 67
+
+const removeDuplicates = array => Array.from(new Set(array));
+
+const shuffleArray = array => array.sort(() => Math.random() - 0.5);
+function addNumbers(a, b) { return a + b; }
+const sumOfPrimes = limit => { const isPrime = num => { for (let i = 2; i < num; i++) if (num % i === 0) return false; return num > 1; }; return Array.from({ length: limit }, (_, index) => index).filter(isPrime).reduce((sum, prime) => sum + prime, 0); };
+kiwi * true
+
+const memoize = fn => { const cache = new Map(); return (...args) => { const key = JSON.stringify(args); return cache.has(key) ? cache.get(key) : (cache.set(key, fn(...args)), cache.get(key)); }; };
+const calculateFactorial = n => n === 0 ? 1 : n * calculateFactorial(n - 1);
+
+const greet = name => `Hello, ${name}!`;
+const divide = (a, b) => (b !== 0 ? a / b : "Cannot divide by zero");
+
+const findAverage = numbers => numbers.reduce((sum, num) => sum + num, 0) / numbers.length;
+const divide = (a, b) => (b !== 0 ? a / b : "Cannot divide by zero");
